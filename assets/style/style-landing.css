@@ -1,0 +1,138 @@
+html {
+    background-color: #efefff;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+h1 {
+    font-size: 300%;
+    color: rgb(42, 42, 243);
+    font-weight: bold;
+    text-align: center;
+  }
+
+button {
+    height: 40px;
+    width: 200px;
+    font-size: 15px;
+    color: black;
+    background: rgb(42, 42, 243);
+    text-align: center;
+    justify-content: center;
+}
+
+.navbar {
+    background-color: #9e9ef9;
+    justify-content: center;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.column {
+    text-align: center;
+}
+
+.yourScore {
+    margin: 4% 0 4% 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons .button:not(:last-child):not(.is-fullwidth) {
+    margin-right: 0;
+}
+
+.field label { 
+    display: center;
+    text-align: center;
+    
+  }
+
+.field.is-grouped {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.field {
+    justify-content: center;
+}
+
+.input {
+    width: 25%;
+}
+
+.control {
+    display: flex;
+    justify-content: center;
+}
+
+.noPadding {
+    padding: 0 0.75rem;
+}
+
+.box {
+    margin: 2%;
+}
+.highScore {
+    padding: 0 5% 0 5%;
+}
+
+.gameOver {
+    padding: 3% 3% 0 3%;
+}
+
+/*
+    Stylization and mobile friendly behaviors
+*/
+
+/* Interactive Effeects */
+.button {
+    transform: perspective(1px) translateZ(0);
+    margin-top: 6px;
+    box-shadow: 2px 4px #7c7a94;
+    color: whitesmoke;
+    transition-property: color;
+    transition-duration: 0.3s;
+  }
+  .button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #3850b7;
+    border-radius: 4px;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  
+  .button:hover:before, .button:focus:before, .button:active:before {
+    transform: scale(0);
+  }
+  .button.is-link.is-light {
+    color: #eff1fa;
+  }
+
+  @media (max-width:760px) {
+    .input {
+        width: 50%;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .field.is-grouped>.control:not(:last-child) {
+        margin-bottom: 0.75rem;
+        margin-right: 0;
+    }
+  }

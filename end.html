@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- JQuery Stylesheet -->
+     <link
+     rel="stylesheet"
+     href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+ />
+ <!-- Bulma Stylesheet -->
+ <link 
+     rel="stylesheet" 
+     href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+ />
+ <!-- Custom Stylesheet -->
+ <link 
+     rel="stylesheet" 
+     href="./assets/style/style-landing.css"
+     />
+    <title>No Mercy Trivia</title>
+
+</head>
+<header>
+    <nav>
+        <div class="navbar">
+            <h1>
+                No Mercy Trivia
+            </h1>
+        </div>
+    </nav>
+</header>
+<body>
+    <div class="gameOver">
+        <h2 id="winOrLose" class="subtitle is-2 is-spaced"></h2>
+        <div class="notification is-success is-light">
+            <button class="delete"></button>
+            <strong id="funPhrase"></strong>
+        </div>
+    </div>
+
+    <!-- your score-->
+    <div class="yourScore">
+        <div class="columns">
+            <div id="col-1" class="column"></div>
+            <div id="col-2" class="column has-background-primary-light">
+                Your score:
+            </div>
+            <div id="col-3" class="column has-background-primary-light"></div>
+            <div id="col-4" class="column"></div>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button class="button is-link is-light" id="start-button">Play Again</button>
+    </div>
+
+    <!--high score-->
+    <div class="highScore">
+        <div class="columns">
+            <div class="column" id="append-scores">
+                <h4 class="notification is-info">High Scores</h4>
+                <div class="columns is-mobile">
+                    <div class="column noPadding is-one-third">
+                        <p class="notification is-info">User Name</p>
+                    </div>
+                    <div class="column noPadding is-one-third">
+                        <p class="notification is-info">Scores</p>
+                    </div>
+                    <div class="column noPadding is-one-third">
+                        <p class="notification is-info">Category</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+     <!-- Include JQuery UI scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<!-- custom JS-->
+<script src="assets/js/end.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- JQuery Stylesheet -->
+     <link
+     rel="stylesheet"
+     href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+ />
+ <!-- Bulma Stylesheet -->
+ <link 
+     rel="stylesheet" 
+     href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+ />
+ <!-- Custom Stylesheet -->
+ <link 
+     rel="stylesheet" 
+     href="./assets/style/style-landing.css"
+     />
+    <title>No Mercy Trivia</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <h1>
+                    No Mercy Trivia
+                </h1>
+            </div>
+        </nav>
+    </header>
+    <!--question box-->
+    <div class="question box">
+        <div class="container is-max-desktop">
+            <div id="questionBox" class="notification is-primary">
+              Questions go here
+            </div>
+          </div>
+    </div>
+
+    <!--answer buttons-->
+    <div class="buttons">
+        <button class =button id="button1">button 1</button>
+        <button class =button id="button2">button 2</button>
+        <button class =button id="button3">button 3</button>
+        <button class =button id="button4">button 4</button>
+    </div>
+    <!-- Include JQuery UI scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <!--custom js file-->  
+  <script src="./assets/js/play.js"></script>
+</body>
+</html>

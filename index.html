@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- JQuery Stylesheet -->
+    <link
+        rel="stylesheet"
+        href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <!-- Bulma Stylesheet -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <!-- Custom Stylesheet -->
+    <link 
+        rel="stylesheet" 
+        href="./assets/style/style-landing.css"
+    />
+    <title>No Mercy Trivia</title>
+  </head>
+
+  <body>
+    <!-- Page Header -->
+    <header>
+        <nav class="navbar">
+            <div> 
+                <h1>
+                    No Mercy Trivia
+                </h1>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Name div-->
+    <div class="field">
+      <label class="label">Name</label>
+      <div class="control">
+        <input class="input" id="player-name" type="text" placeholder="Text input">
+      </div>
+    </div>
+      
+      <!-- Categories -->
+      <div class="field">
+        <label class="label">Categories</label>
+        <div class="control">
+          <div class="select">
+            <select id="categories-select">
+            <!--Drop down with options added in Javascript file-->
+              <option></option>
+            </select>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Start and cancel buttons-->
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-link is-light" id="start-button">Start game</button>
+        </div>
+        <div class="control">
+          <button class="button is-link is-light">Cancel</button>
+        </div>
+      </div>
+    
+
+  </body>
+
+  <!-- Include JQuery UI scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+  <!-- Custom JS file for user form interactivity and local storage of responses -->
+  <script src="./assets/js/script-landing.js"></script>
+</html>
